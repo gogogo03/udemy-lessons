@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Homepage</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- <script type="text/javascript" src="nav.js"></script> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<!-- <div class="title">
+				<h1>Homepage</h1>
+				<p>Learn more about my<a href="page.html">page</a>.</p>
+			</div> -->
+			<!-- <img id="logo" src="img/Wemen.svg" alt="Men & Women Symbol"> 
+			<h1>MMXXIII</h1> -->
+			<div class="navbar">
+				<div class="logo"><a href="#">MMXXIII</a></div>
+					<ul class="links">
+						<li><a href="#"><i class="fa fa-fw fa-home active"></i>Home</a></li>
+						<li><a href="#"><i class="fa fa-fw fa-folder"></i>Projects</a></li>
+						<li><a href="#"><i class="fa fa-fw fa-question"></i>About</a></li>
+						<li><a href="https://www.lamborghini.com/en-en/dealerships/lamborghini-manila#showroom"><i class="fa fa-fw fa-gear"></i>Services</a></li>
+						<li><a href="form.html"><i class="fa fa-fw fa-phone"></i>Get in Touch</a></li>
+						<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a> -->
+					</ul>
+					<a href="#" class="action-btn">Let's Go</a>
+					<div class="toggle-btn">
+						<i class="fa solid fa-bars"></i>
+					</div>
+				</div>
+				<div class="dropdown-menu open">
+					<li><a href="#"><i class="fa fa-fw fa-home active"></i>Home</a></li>
+					<li><a href="#"><i class="fa fa-fw fa-folder"></i>Projects</a></li>
+					<li><a href="#"><i class="fa fa-fw fa-question"></i>About</a></li>
+					<li><a href="https://www.lamborghini.com/en-en/dealerships/lamborghini-manila#showroom"><i class="fa fa-fw fa-gear"></i>Services</a></li>
+					<li><a href="form.html"><i class="fa fa-fw fa-phone"></i>Get in Touch</a></li>
+					<a href="#" class="action-btn">Let's Go</a>
+				</div>
+			</div>
+		</header>
+		<script>
+			const toggleBtn = document.querySelector('.toggle-btn')
+			const toggleBtnIcon = document.querySelector('.toggle-btn i')
+			const dropdownMenu = document.querySelector('.dropdown-menu')
+
+			toggleBtn.onClick = function () {
+				dropdownMenu.classList.toggle('open')
+				const isOpen = dropdownMenu.classList.contains('open')
+
+				toggleBtnIcon.classList = isOpen
+					? 'fa solid fa-xmark'
+					: 'fa solid fa-bars'
+			}
+		</script>
+		<div class="container">
+			<!-- <img src="img/moon.jpg" alt="Moon"> -->
+
+			<div class="content-area group">
+				<div class="main-area">
+					<article>
+						<header>
+							<h2>Article</h2>
+						</header>
+						<div class="article-content">
+							<p>An article is any member of a class of dedicated words that are used with noun phrases to mark the identifiability of the referents of the noun phrases. The category of articles constitutes a part of speech. In English, both "the" and "a(n)" are articles, which combine with nouns to form noun phrases.</p>
+						</div>
+						
+						<!-- <footer>
+							<p>&copy; 2023 - Lezzgoo...</p>
+						</footer> -->
+					</article>
+
+					<div class="img-banner">
+						<img src="img/moon.jpg" alt="The Moon">
+						<div class="img-desc">
+							<p>The Moon is Earth's only natural satellite. Its diameter is about one-quarter of Earth's, making it the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet. It is larger than all known dwarf planets in the Solar System. </p>
+						</div>
+					</div>
+						
+					<article>
+						<header>
+							<h2>Web Development</h2>
+						</header>
+						
+						<p>Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+		
+						<!-- <footer>
+							<p>&copy; 2023 - Lezzgoo...</p>
+						</footer> -->
+					</article>
+					<div class="conten-2">
+						<div class="content-area">
+							<h2>How Many Programming Languages Are There And What To Choose For Your Team</h2>
+							<p>Instead of looking for the best language, a better strategy is to analyze the most used language and its uses. According to the TIOBE Index, there are over 265 programming languages out there. There is a reason why there are so many languages. To put it simply, each language can give you different results depending on the scale and type of project. Usually, programmers learn a dozen of these languages to specialize in a few of them based on their work requirements. </p>
+							<p>There is no point in looking for someone who can master all of these programming languages. A more strategic method is to isolate the specific need of your project for each stage of the development process. So, before looking for the winner, let's have a look at which is the best language to consider in the different phases of the development process: </p>
+						</div>
+		
+						<div class="data-content">
+							<h3>Fron-End Web Development</h3>
+							<ul>
+								<li>JavaScript</li>
+								<li>Elm</li>
+								<li>TypeScript</li>
+							</ul>
+		
+							<h3>Back-End Web Development</h3>
+							<ul>
+								<li>JavaScript</li>
+								<li>Scala</li>
+								<li>Python</li>
+								<li>Go</li>
+								<li>Ruby</li>
+							</ul>
+		
+							<h3>Mobile Applications</h3>
+							<ul>
+								<li>Swift</li>
+								<li>Java</li>
+								<li>Objective C</li>
+								<li>JavaScript</li>
+							</ul>
+		
+							<h3>Game Development</h3>
+							<ul>
+								<li>Unity</li>
+								<li>TypeScript</li>
+							</ul>
+		
+							<h3>Desktop Applications</h3>
+							<ul>
+								<li>Scala</li>
+								<li>Go</li>
+								<li>Python</li>
+							</ul>
+		
+							<h3>System Programming</h3>
+							<ul>
+								<li>Go</li>
+								<li>Rust</li>
+							</ul>
+							<p>Based on what you need, you can focus your research on the type of programming language that can give you the best outcome. Here is a comparison between three rankings of the most in-demand programming languages.</p>
+						</div>
+					</div>
+
+					<div class="table-data">
+						<h2>Top Programming Languages: Rankings In Comparison</h2>
+						<div class="table-content">
+							<table>
+								<thead>
+									<tr>
+										<th>Index</th>
+										<th>1st</th>
+										<th>2nd</th>
+										<th>3rd</th>
+										<th>4th</th>
+										<th>5th</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<tr>
+										<td>IEEE Spectrum</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>C</td>
+										<td>C++</td>
+										<td>JavaScript</td>
+									</tr>
+									<tr>
+										<td>GitHub 2.0(Pull Request)</td>
+										<td>JavaScript</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>Go</td>
+										<td>Ruby</td>
+									</tr>
+									<tr>
+										<td>GitHub 2.0 (Pushes)</td>
+										<td>JavaScript</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>C++</td>
+										<td>PHP</td>
+									</tr>
+									<tr>
+										<td>RedMonk</td>
+										<td>JavaScript</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>PHP</td>
+										<td>C++/C#</td>
+									</tr>
+									<tr>
+										<td>PYPL</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>JavaScript</td>
+										<td>C#</td>
+										<td>C/C++</td>
+									</tr>
+									<tr>
+										<td>TIOBE</td>
+										<td>C</td>
+										<td>Python</td>
+										<td>Java</td>
+										<td>C++</td>
+										<td>C#</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="form-data">
+						<form action="">
+							<label for="email" class="hidden-label">Email</label>
+							<input type="email" name="email" placeholder="Email Address">
+							<label for="password" class="hidden-label">Password</label>
+							<input type="password" name="password" placeholder="Password">
+							<input type="button" name="submit" value="Sign In">
+						</form>
+					</div>
+					
+				</div> <!-- END MAIN AREA-->
+
+				<aside class="sidebar">
+					<div class="audio-area">
+						<h2>Audio Player <span>(Do not play!)</span></h2>
+						<audio controls>
+							<source src="audio/yamete.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+					
+					<div class="video-area">
+						<h2>Video Player <span>(Do not play!)</span></h2>
+						<video width="100%" height="33%" controls>
+							<source src="vid/sample.mp4" type="video/mp4">
+						</video>
+					</div>
+
+					<div class="side-content">
+						<!-- <h2><u>Trivianation</u></h2> -->
+						<div class="side-content-1">
+							<h3>The hashtag symbol is technically called an octothorpe.</h3>
+							<p>According to the Merriam-Webster dictionary, the "octo-" prefix refers to the eight points on the popular symbol, but the "thorpe" remains a mystery. One theory claims that it comes from the Old English word for "village," based on the idea that the symbol looks like a village surrounded by eight fields!</p>
+
+							<h3>The most streamed Spotify single is Harry Styles' "Girl Crush."</h3>
+							<p>The solo star's Spotify single has the most streams at 154 million. Such a win for the One Direction alum.</p>
+
+							<h3>Some cats are allergic to people.</h3>
+							<p>FYI for all you people allergic to cats: they might be allergic to you, too! It's pretty uncommon due to the fact that we bathe ourselves more often than other species and don't shed as much hair or dead skin, but yes, it does happen.</p>
+
+							<h3>The unicorn is the national animal of Scotland.</h3>
+							<p>Yes, although it's a fabled creature, the national animal of Scotland is actually the mythical unicorn — chosen because of its association with dominance and chivalry as well as purity and innocence in Celtic mythology. BRB, moving to Scotland real quick.</p>
+
+							<h3>M&M stands for Mars and Murrie.</h3>
+							<p>Forrest Mars (son of the Mars Company founder) first spotted the British confection Smarties during the Spanish Civil War and noticed the candy shell prevented the chocolate from melting. He teamed up with Bruce Murrie (son of Hershey Chocolate's president) and the company later trademarked the "Melts in Your Mouth, Not in Your Hand" slogan.</p>
+
+							<h3>Facebook has more users than many major populations.</h3>
+							<p>At 2.89 billion monthly users, Facebook overshadows China's (1.4 billion) and India's (1.3 billion) populations.</p>
+
+							<h3></h3>
+							<p></p>
+						</div>
+							
+						
+					</div>
+					
+					<!-- <div class="fix"></div> -->
+				</aside>
+			</div>
+
+			<!-- <div class="row">
+				<div class="col col-md-4 col-lg-3">
+					<a href="/udemy/img/aries_zodiac_sign.jpg"><img src="/udemy/img/compress/aries_zodiac_sign-min.jpg" alt="Aries"></a>
+					<a href="/udemy/img/taurus_zodiac_sign.jpg"><img src="/udemy/img/compress/taurus_zodiac_sign-min.jpg" alt="Taurus"></a>
+					<a href="/udemy/img/gemini_zodiac_sign.jpg"><img src="/udemy/img/compress/gemini_zodiac_sign-min.jpg" alt="Gemini"></a>
+					<a href="/udemy/img/cancer_zodiac_sign.jpg"><img src="/udemy/img/compress/cancer_zodiac_sign-min.jpg" alt="Cancer"></a>
+					<a href="/udemy/img/leo_zodiac_sign.jpeg"><img src="/udemy/img/compress/leo_zodiac_sign-min.jpeg" alt="Leo"></a>
+					<a href="/udemy/img/virgo_zodiac_sign.jpg"><img src="/udemy/img/compress/virgo_zodiac_sign-min.jpg" alt="Virgo"></a>
+					<a href="/udemy/img/libra_zodiac_sign.jpg"><img src="/udemy/img/compress/libra_zodiac_sign-min.jpg" alt="Libra"></a>
+					<a href="/udemy/img/scorpio_zodiac_sign.jpeg"><img src="/udemy/img/compress/scorpio_zodiac_sign-min.jpeg" alt="Scorpio"></a>
+					<a href="/udemy/img/sagittarius_zodiac-sign.jpeg"><img src="/udemy/img/compress/sagittarius_zodiac-sign-min.jpeg" alt="Sagittarius"></a>
+					<a href="/udemy/img/capricorn_zodiac_sign.jpg"><img src="/udemy/img/compress/capricorn_zodiac_sign-min.jpg" alt="Capricorn"></a>
+					<a href="/udemy/img/aquarius_zodiac_sign.jpg"><img src="/udemy/img/compress/aquarius_zodiac_sign-min.jpg" alt="Aquarius"></a>
+					<a href="/udemy/img/pisces_zodiac_sign.jpeg"><img src="/udemy/img/compress/pisces_zodiac_sign-min.jpeg" alt="Pisces"></a>
+				</div>
+			</div> -->
+
+			<div class="row">
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/aries_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/taurus_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/gemini_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/cancer_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/leo_zodiac_sign.jpeg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/virgo_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/libra_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/scorpio_zodiac_sign.jpeg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/sagittarius_zodiac-sign.jpeg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/capricorn_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/aquarius_zodiac_sign.jpg" alt="Moon 1">
+					</div>
+				</div>
+
+				<div class="col col-xs-4 col-sm-4 col-md-3 col-lg-3">
+					<div class="image-grid">
+						<img src="/udemy/img/pisces_zodiac_sign.jpeg" alt="Moon 1">
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<footer>
+					<p>&copy; 2023 - Lezzgoo...</p>
+				</footer>
+			</div>
+			
+		</div> 
+		<!-- END OF CONTAINER -->
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	</body>
+	
+</html>

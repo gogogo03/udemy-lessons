@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HTML Forms</title>
+		<link rel="stylesheet" href="css/form.css">
+	</head>
+	
+	<body>
+		<div class="form-group">
+			<form>
+				<label for="firstName" class="hidden-label">First Name:</label>
+				<input type="text" id="firstName" name="firstName" placeholder="First Name">
+				
+				<label for="lastName" class="hidden-label">Last Name:</label>
+				<input id="lastName" type="text" name="lastName" placeholder="Last Name">
+	
+				<label for="email" class="hidden-label">Email:</label>
+				<input id="email" type="email" name="email"	placeholder="Email Address">
+	
+				<label for="telephone" class="hidden-label">Telephone:</label>
+				<input type="tel" id="tel" name="telephone" placeholder="Telephone Number"><br>
+	
+				<label for="continent">Which Continent are you from?</label>
+				<select name="continent" id="continent">
+					<option value="afreica">Africa</option>
+					<option value="antarctica">Antarctica</option>
+					<option value="asia">Asia</option>
+					<option value="australia">Australia</option>
+					<option value="europe">Europe</option>
+					<option value="northAmerica">North America</option>
+					<option value="southAmerica">South America</option>
+				</select>
+	
+				<fieldset>
+					<legend>Preferred Time?</legend>
+						<input type="radio" id="morning" name="time" value="time1"><label for="morning">Morning</label>
+						<input type="radio" id="afternoon" name="time" value="time2"><label for="afternoon">Afternoon</label>
+						<input type="radio" id="evening" name="time" id="evening" value="time3"><label for="evening">Evening</label>
+				</fieldset>
+				<fieldset>
+					<legend>Preferred Time?</legend>
+						<input type="checkbox" id="morning" name="morning" value="time1"><label for="morning">Morning</label>
+						<input type="checkbox" id="afternoon" name="afternoon" value="time2"><label for="afternoon">Afternoon</label>
+						<input type="checkbox" id="evening" name="evening" id="evening" value="time3"><label for="evening">Evening</label>
+				</fieldset>
+	
+				<label for="message" >Your Thoughts:</label>
+				<textarea name="your_messages" id="message" cols="30" rows="1"></textarea>
+				
+				<input type="submit" value="Submit">
+				
+			</form>
+		</div>
+
+	</body>
+	
+</html>
